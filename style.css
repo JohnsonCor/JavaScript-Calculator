@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
-/* quick reset so all our padding is the right size */
 * {
   box-sizing: border-box;
 }
 
 .calculator input,
 .calc-button   {
-  font-family: 'Space Mono';
+  font-family: 'Space Mono', 'sans-serif';
 }
 
-/* add some spacing */
 body          {
   background: #F6F6F6;
   background-color: #121212;
@@ -19,7 +17,6 @@ body          {
   padding-top: 30px;  
 }
 
-/* limit the width and center */
 .calculator   {
   background-color: #2E2E2E;
   max-width: 400px;
@@ -29,7 +26,6 @@ body          {
 }
 
 .calculator input   {
-  /* reset basic form styles */
   background: none;
   border: none;
   outline: none;
@@ -52,47 +48,67 @@ body          {
 
 .calc-button  {
   background-color: #636363;
-  border: 1px solid #111; /* black border */
+  box-shadow: 0px 5px 10px #222222;
+  border: 1px solid #111; 
   padding: 20px;
-  color: #EEE; /* white text */
-  border-radius: 5px; /* rounded corners */
-  font-size: 22px; /* larger fonts */
-  cursor: pointer; /* make it look clickable */
+  color: #EEE;
+  border-radius: 5px; 
+  font-size: 22px; 
+  cursor: pointer;
 }
 
 .calculator-buttons {
-  /* small spacing within our container */
   padding: 20px;
 
-  /* the grid stuff! */
   display: grid;
 
-  /* create 4 columns */
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  /* add the grid gap */
   grid-gap: 10px;
 }
 
-/* span across 3 columns */
+.calculator-buttons .calc-button:hover {
+    background-color: #858585;
+}
+
 .is-zero,
 .is-clear   {
   grid-column: span 1;
 }
 
 .is-clear {
-    background: red;
+    background: #FF8400 !important;
 }
 
-/* go blue */
+.is-clear:hover {
+    background-color: #FFa647 !important;
+}
+
 .is-plus,
 .is-minus,
 .is-times,
 .is-divide {
-  background: #3572DB;
+  background: #0099FF !important;
+}
+
+.is-plus:hover {
+    background-color: #33ADFF !important;
+}
+.is-minus:hover {
+    background-color: #33ADFF !important;
+}
+.is-times:hover {
+    background-color: #33ADFF !important;
+}
+.is-divide:hover {
+    background-color: #33ADFF !important;
 }
 
 .is-equals {
   grid-column: span 2;
-  background: #28D060;
+  background: #28D060 !important;
+}
+
+.is-equals:hover {
+    background-color: rgb(54, 228, 112) !important;
 }
