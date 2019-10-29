@@ -2,50 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/style.css">
-    <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
 </head>
 
 <body>
 
-    <div class="calculator">
+  <div class="calculator">
 
-        <!-- the input -->
-        <input type="number" id="calc-display">
-      
-        <!-- the buttons -->
-        <div class="calculator-buttons">
-          <button class="calc-button is-clear" id="calc-clear">AC</button>
-          <button class="calc-button open-parenthesis" id="calc-open-p">(</button>
-          <button class="calc-button close-parenthesis" id="calc-close-p">)</button>
-          <button class="calc-button is-divide" id="calc-divide">&divide;</button>
-      
-          <button class="calc-button" id="calc-7">7</button>
-          <button class="calc-button" id="calc-8">8</button>
-          <button class="calc-button" id="calc-9">9</button>
-          <button class="calc-button is-times" id="calc-times">&times;</button>
-      
-          <button class="calc-button" id="calc-4">4</button>
-          <button class="calc-button" id="calc-5">5</button>
-          <button class="calc-button" id="calc-6">6</button>
-          <button class="calc-button is-minus" id="calc-minus">&minus;</button>
-      
-          <button class="calc-button" id="calc-1">1</button>
-          <button class="calc-button" id="calc-2">2</button>
-          <button class="calc-button" id="calc-3">3</button>
-          <button class="calc-button is-plus" id="calc-plus">&plus;</button>
-      
-          <button class="calc-button is-zero" id="calc-0">0</button>
-          <button class="calc-button is-decimal" id="calc-decimal">.</button>
-          <button class="calc-button is-equals" id="calc-equals">&equals;</button>
-        </div>
-        
-      </div>
+    <!-- the input -->
+    <!--<input type="number" id="calc-display">-->
+    <div class="input" id="calc-screen">0</div>
 
-    <script src="/calculator.js"></script>
+    <!-- the buttons -->
+    <div class="calculator-buttons">
+      <button class="calc-button is-clear" id="calc-clear">AC</button>
+      <button class="calc-button num-btn open-parenthesis" id="calc-open-p">(</button>
+      <button class="calc-button num-btn close-parenthesis" id="calc-close-p">)</button>
+      <button class="calc-button op-btn" id="calc-divide">&divide;</button>
+
+      <button class="calc-button num-btn" id="calc-7">7</button>
+      <button class="calc-button num-btn" id="calc-8">8</button>
+      <button class="calc-button num-btn" id="calc-9">9</button>
+      <button class="calc-button op-btn" id="calc-times">&times;</button>
+
+      <button class="calc-button num-btn" id="calc-4">4</button>
+      <button class="calc-button num-btn" id="calc-5">5</button>
+      <button class="calc-button num-btn" id="calc-6">6</button>
+      <button class="calc-button op-btn" id="calc-minus">&minus;</button>
+
+      <button class="calc-button num-btn" id="calc-1">1</button>
+      <button class="calc-button num-btn" id="calc-2">2</button>
+      <button class="calc-button num-btn" id="calc-3">3</button>
+      <button class="calc-button op-btn" id="calc-plus">&plus;</button>
+
+      <button class="calc-button num-btn is-zero" id="calc-0">0</button>
+      <button class="calc-button is-decimal" id="calc-decimal">.</button>
+      <button class="calc-button is-equals" id="calc-equals">&equals;</button>
+    </div>
+
+  </div>
+
+  <script src="calculator.js"></script>
 </body>
 
 </html>
