@@ -62,7 +62,6 @@ let calculation = (clickObj) => {
          display.innerText = displayVal;
          break;
       case '%':
-         pendingVal = displayVal;
          evalStringArray.push(displayVal);
          evalStringArray.push('%');
          displayVal = '0';
@@ -226,7 +225,6 @@ const parser = (function() {
            }
        }
 
-       //return tokens;
        return shuntingYard(tokens);
    }
 

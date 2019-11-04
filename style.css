@@ -91,7 +91,7 @@ body {
 }
 
 .is-equals {
-  grid-column: span 2;
+  grid-column: span 4;
   background: #28D060 !important;
 }
 
