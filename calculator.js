@@ -37,55 +37,55 @@ let calculation = (clickObj) => {
          pendingVal = displayVal;
          evalStringArray.push(displayVal);
          evalStringArray.push('+');
-         displayVal = '0';
+         displayVal = '';
          display.innerText = displayVal;
          break;
       case '-':
          pendingVal = displayVal;
          evalStringArray.push(displayVal);
          evalStringArray.push('-');
-         displayVal = '0';
+         displayVal = '';
          display.innerText = displayVal;
          break;
       case '*':
          pendingVal = displayVal;
          evalStringArray.push(displayVal);
          evalStringArray.push('*');
-         displayVal = '0';
+         displayVal = '';
          display.innerText = displayVal;
          break;
       case '/':
          pendingVal = displayVal;
          evalStringArray.push(displayVal);
          evalStringArray.push('/');
-         displayVal = '0';
+         displayVal = '';
          display.innerText = displayVal;
          break;
       case '%':
          evalStringArray.push(displayVal);
          evalStringArray.push('%');
-         displayVal = '0';
+         displayVal = '';
          display.innerText = displayVal;
          break;
       case '^':
          pendingVal = displayVal;
          evalStringArray.push(displayVal);
          evalStringArray.push('^');
-         displayVal = '0';
+         displayVal = '';
          display.innerText = displayVal;
          break;
       case '(':
          pendingVal = displayVal;
          evalStringArray.push(displayVal);
          evalStringArray.push('(');
-         displayVal = '0';
+         displayVal = '';
          display.innerText = displayVal;
          break;
       case ')':
          pendingVal = displayVal;
          evalStringArray.push(displayVal);
          evalStringArray.push(')');
-         displayVal = '0';
+         displayVal = '';
          display.innerText = displayVal;
          break;
       case '=':
@@ -132,8 +132,6 @@ for (let i = 0; i < calcBtns.length; i++) {
 for (let i = 0; i < opbtns.length; i++) {
    opbtns[i].addEventListener('click', calculation, false);
 }
-
-
 
 document.getElementById("calc-equals").addEventListener("click", function(e) {
    //const expression = document.getElementById("expression").value;
