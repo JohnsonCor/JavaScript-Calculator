@@ -1,1 +1,25 @@
 # JavaScript-Calculator
+
+How to run the application:
+There is no .exe file for this program.  To run the calculator application, first open the 
+Source_Johnson_Corey folder, then open JavaScript-Calculator, double click on the 
+'index.html' file to open it in a web browser.  Once the application opens in the browser, you
+can begin using it.
+
+Please note: 
+This application implements a string tokenizing algorithm, along with a shunting yard
+algorithm.  I did not invent these algorithms on my own, I found these algorithms while doing
+research on calculator logic, and modified/implemented them for use in this particular program.
+
+A note on using parenthesis: 
+You must include an operator before an opening parenthesis or you will
+encounter an error.  For example, you cannot enter 1(1+1) to get an answer of 2.  Instead, you must
+enter 1*(1+1).
+
+A note on operators:
+As soon you enter an operator into your expression (+, -, *, /, %, ^), the 
+screen will clear itself to make room for the next argument in the expression.  For example, if 
+you enter '24 * 3', '24' will be displayed on the screen until you press '*', at which point the screen
+will go blank while it waits for you to enter '3'.  When you press the '3' button, '3' will then be
+displayed on the screen.  When you press the '=' the screen will display the solution if you have
+entered a valid input, or NaN (not a number) otherwise.
