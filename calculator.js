@@ -99,24 +99,6 @@ let calculation = (clickObj) => {
    }
 }
 
-
-/*
-btnEquals.onclick = () => {   
-   let solution = undefined;
-
-   try {
-      solution = parseFloat(eval(display.innerHTML));
-   } catch (error) {
-      solution = 'error';
-      console.log(solution);
-   }
-
-   display.innerHTML = solution;
-   console.log(solution);
-   displayVal = '0';
-   
-}
-*/
 btnAllClear.onclick = () => {
    displayVal = '0';
    pendingVal = undefined;
